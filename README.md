@@ -21,7 +21,7 @@ Additionally, I enjoyed rereading that story for whatever nerd points that nets!
 * Pull the repository to your workspace, I will assume a Linux environment.
 
 ## How to run Naive Experiment
-* Provide ```run_naive.sh``` with write permissions.
+* Provide ```run_naive.sh``` with run* permissions.
 * Run the test with ./run_naive.sh > results.txt and you will see the results from ```time``` on each command, as well as the results of their outputs compared through grep in a txt file. It doesn't do the full justice of running the command yourself to stdio, and this part is a bit of a rush job, so I encourage you to run the command yourself!
 
 ## How to run Tool Experiment
@@ -31,3 +31,4 @@ Additionally, I enjoyed rereading that story for whatever nerd points that nets!
     * ```pip3 install -r requirements.txt```
 * The rest are the same as Naive, but this time we will use ```run_tool.sh```
 
+\* sorry I just realized I had a brain fart
