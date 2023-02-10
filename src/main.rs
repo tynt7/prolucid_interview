@@ -2,8 +2,6 @@ use std::fs;
 use std::path::Path;
 use regex::Regex;
 
-//TODO: Move this all to the srs/rust folder for comparing different process' and 
-//running python + C (Scope subject to change)
 fn main() {
     //a path to the input from the root directory, may need to change later
     let in_path = Path::new("inputs/ShortStory.txt");
@@ -52,4 +50,3 @@ fn main() {
     //and expect the worst case
     fs::write(out_path, sent_only.join("\n")).expect("Unable to write data");
 }
-    
