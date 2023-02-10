@@ -21,7 +21,7 @@ fn main() {
         if s.len() > 0 {
             //if our regex hasn't triggered and the sentence is at least 2 characters
             //we could tweak this tolerance i guess but it seems fine here
-            if !clean_hyph.is_match(s) && s.len() > 2{
+            if !clean_hyph.is_match(s) && s.len() > 3{
                 //lets add that sentence!
                 sent_only.push(s
                     //but lets get rid of that white space first
