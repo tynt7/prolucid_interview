@@ -1,5 +1,5 @@
 # Prolucid Interview
-## Tyler Thomson
+### Tyler Thomson
 
 For this technichal interview I was tasked to arrange a short story's sentences in alphabetic order. Some initial assumptions I have made are that we want to preserve the sentence structure. Additionally I have assumed as sentence is anything concluding in;
 - .
@@ -13,4 +13,20 @@ I was able to accomplish the rust program in a naive approach 08/02/23 after sta
 
 As of 09/02/23 I have taken stock of realistic and accomplashible work for the time alotted, so sadly I am reducing scope to just the rust and python programs already completed, and a simple bash script that can be run for some (really) naive measurments. I admittedly can get a bit carried away but I like to think myself realistic at the end of the day, so with the loose deadline of within the week approaching I wanted to be sure I was covered in the event of unforseen circumstances tomorrow 10/02/23. I hope that you like what I've been able to put together, I had a blast writing it and really wanted to do more but at a certain point bells and whistles are just noise. I also will be the first to admit the strictness of some of my data cleaning, I had intended to do a fun little experiment across the three languages to learn more about concurrency in rust, though now with my sights brought back down to earth and that no longer being the case it leaves my solution in a poor position to receive any new stories should they not follow a similar formatting to the provided story. Additionally because I wouldn't have access to the same libraries across all three languages I tried to minimize which ones I used to provide a greater comparability in my experiment. I include this all to give you the full picture of what I was thinking.
 
+Okay one more time, because it was bugging me not using existing tools, I have done it again in python but used the nltk library so it wasn't as cheap. I really am enjoying this project.
+
 Additionally, I enjoyed rereading that story for whatever nerd points that nets! What is, Isaac Asimov's 'The Last Question'? I recently got a copy of the first Foundation book and am looking forward to it!
+
+## General Setup
+* Pull the repository to your workspace, I will assume a linux enviornment.
+
+## How to run Naive Experiment
+* Provide ```run_naive.sh``` with write permissions.
+* Run the test with ./run_naive.sh > results.txt and you will see the results from ```time``` on each command, as well as the results of their outputs compared through grep in a txt file. It doesn't do the full justice of running the command yourself to stdio, and this part is a bit of a rush job, so I encourage you to run the command yourself!
+
+## How to run Tool Experiment
+* Set up a python venv using the method of your choice, I used a simple approach of;
+    * ```python3 -m venv env```
+    * ```source env/bin/activate```
+    * ```pip3 install -r requirements.txt```
+* The rest are the same as Naive, but this time we will use ```run_tool.sh```
